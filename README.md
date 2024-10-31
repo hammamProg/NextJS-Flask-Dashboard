@@ -1,38 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# User Registration App
 
-## Getting Started
+This project consists of a backend built with Flask and a frontend developed using Next.js. It allows users to register and view their profile information.
 
-First, run the development server:
+## Requirements
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Backend (Flask)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Python 3.x
+- Flask
+- SQLAlchemy
+- Flask-Cors
+- ODBC Driver for SQL Server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Frontend (Next.js)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js
+- Next.js
+- React
 
-## Learn More
+## Setup Instructions
 
-To learn more about Next.js, take a look at the following resources:
+### Backend Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository**:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/hammamProg/NextJS-Flask-Dashboard.git
+   cd backend
+   ```
 
-## Deploy on Vercel
+2. **Create a virtual environment** (optional but recommended):
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Install dependencies**:
 
-# NextJS-Flask-Dashboard
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the Flask app**:
+
+   ```bash
+   python3 run.py
+   ```
+
+   The backend should now be running at `http://localhost:8111`.
+
+### Frontend Setup
+
+1. **Open a new terminal** and navigate to the frontend directory:
+
+   ```bash
+   cd frontend
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the Next.js development server**:
+
+   ```bash
+   npm run dev
+   ```
+
+   The frontend should now be running at `http://localhost:3000`.
