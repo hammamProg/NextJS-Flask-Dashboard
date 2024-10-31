@@ -7,7 +7,7 @@ user_bp = Blueprint('user_bp', __name__,template_folder='templates')
 
 
 @user_bp.route('/user/<int:id>')
-def user(id):
+def get_profile_by_id(id):
     '''
         retrieve a user by id
         
@@ -23,7 +23,7 @@ def user(id):
     return jsonify(user.to_dict()),200
 
 @user_bp.route('/user', methods=['GET'])
-def users():
+def get_all_users():
     '''
         retrieve all users from the database as json
         
