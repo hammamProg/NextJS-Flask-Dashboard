@@ -18,7 +18,7 @@ def create_app(test_config=None):
 
 
     # replace the uri with your database uri instead of the sqlite one
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pyodbc://legistaitest:admin%40123@legistai-test.database.windows.net:1433/legistai-test?driver=ODBC+Driver+18+for+SQL+Server&Encrypt=yes&TrustServerCertificate=no&Connection+Timeout=30'
     
     db.init_app(app) 
     migrate = Migrate(app, db)
