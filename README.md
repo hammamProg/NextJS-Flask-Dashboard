@@ -28,13 +28,13 @@ This project consists of a backend built with Flask and a frontend developed usi
 
    ```bash
    git clone https://github.com/hammamProg/NextJS-Flask-Dashboard.git
-   cd backend
+   cd NextJS-Flask-Dashboard/backend
    ```
 
 2. **Create a virtual environment** (optional but recommended):
 
    ```bash
-   python -m venv venv
+   python3 -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 
@@ -44,7 +44,13 @@ This project consists of a backend built with Flask and a frontend developed usi
    pip install -r requirements.txt
    ```
 
-4. **Run the Flask app**:
+4. **Change your Database URI**
+
+   ```bash
+   # in file backend/app/__init__.py change the app.config['SQLALCHEMY_DATABASE_URI'] to your database URI
+   ```
+
+5. **Run the Flask app**:
 
    ```bash
    python3 run.py
@@ -57,7 +63,7 @@ This project consists of a backend built with Flask and a frontend developed usi
 1. **Open a new terminal** and navigate to the frontend directory:
 
    ```bash
-   cd frontend
+   cd NextJS-Flask-Dashboard/frontend
    ```
 
 2. **Install dependencies**:
