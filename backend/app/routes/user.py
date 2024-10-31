@@ -37,7 +37,15 @@ def users():
 @user_bp.route('/user',methods=['POST'])
 def register_user():
     '''
-        register a new user
+        register a new user info
+        
+        Args:
+            name (str)
+            location (str)
+            phone (str)
+            email (str)
+            description (str)
+            rating (int)
         
         Returns:
             json: the new user object

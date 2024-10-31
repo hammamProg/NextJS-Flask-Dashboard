@@ -1,6 +1,8 @@
-# User Registration App
+# Simple Dashboard (FLask & NextJS)
 
 This project consists of a backend built with Flask and a frontend developed using Next.js. It allows users to register and view their profile information.
+
+![Dashboard Screenshot](dashboard_screenshot.png)
 
 ## Requirements
 

@@ -4,12 +4,10 @@ from flask_migrate import Migrate
 from flask_cors import CORS
 
 
-
-
 db = SQLAlchemy()
 app = None
 
-
+# import the blueprint route to register it
 from .routes.user import user_bp
 
 def create_app(test_config=None):
@@ -27,7 +25,7 @@ def create_app(test_config=None):
     CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
     
-
+    # register the blueprint
     app.register_blueprint(user_bp)
     
     return app
